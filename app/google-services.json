@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "524347374116",
+    "project_id": "ridefast-7a785",
+    "storage_bucket": "ridefast-7a785.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524347374116:android:6316abc82fc85520ce36b1",
+        "android_client_info": {
+          "package_name": "com.example.ridefast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524347374116-ebhtpi83518v7ukvigppg4q284khsogo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALOz-SyRhKGR9dfqmSfv_v7ErXcYnW0Ko"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524347374116-ebhtpi83518v7ukvigppg4q284khsogo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
