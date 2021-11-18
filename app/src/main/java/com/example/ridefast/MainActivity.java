@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Log.d("====>", document.getId() + " => " + document.getData());
+
                                 HarleyDavidson harleyDavidson = document.toObject(HarleyDavidson.class);
                                 harleyDavidsonArrayList.add(harleyDavidson);
                                 harleyDavidsonAdapter.notifyDataSetChanged();

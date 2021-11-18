@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.bumptech.glide.Glide;
 import com.example.ridefast.R;
 import com.example.ridefast.modal.HarleyDavidson;
 
@@ -38,7 +39,7 @@ public class HarleyDavidsonAdapter extends RecyclerView.Adapter<HarleyDavidsonAd
 
         HarleyDavidson harleyDavidson = harleyDavidsonList.get(position);
 
-        holder.background.setImageResource(Integer.parseInt(harleyDavidson.getBackground()));
+        Glide.with(context).load(harleyDavidson.getBackground()).into(holder.background);
         holder.name.setText(harleyDavidson.getName());
         holder.category.setText(harleyDavidson.getCategory());
         holder.price.setText(String.valueOf(harleyDavidson.getPrice()));
