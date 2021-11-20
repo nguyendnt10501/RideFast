@@ -30,8 +30,8 @@ public class HarleyDavidsonAdapter extends RecyclerView.Adapter<HarleyDavidsonAd
     @NonNull
     @Override
     public HarleyDavidsonViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_product,parent,false);
-        return new HarleyDavidsonViewHolder(view);
+
+        return new HarleyDavidsonViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_product,parent,false));
     }
 
     @Override
@@ -42,7 +42,7 @@ public class HarleyDavidsonAdapter extends RecyclerView.Adapter<HarleyDavidsonAd
         Glide.with(context).load(harleyDavidson.getBackground()).into(holder.background);
         holder.name.setText(harleyDavidson.getName());
         holder.category.setText(harleyDavidson.getCategory());
-        holder.price.setText(String.valueOf(harleyDavidson.getPrice()));
+        holder.price.setText(harleyDavidson.getPrice()+"$");
     }
 
     @Override

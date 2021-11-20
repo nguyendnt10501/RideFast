@@ -64,6 +64,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text2" />
 
+    <!-- Logo company -->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcvLogoCompany"
         android:layout_width="match_parent"
@@ -72,44 +74,266 @@
         app:layout_constraintTop_toBottomOf="@+id/search"
         tools:layout_editor_absoluteX="20dp" />
 
-
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rcvLogoCompany">
+        app:layout_constraintTop_toBottomOf="@+id/rcvLogoCompany"
+        tools:layout_editor_absoluteX="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:fontFamily="@font/poppins_semibold"
-            android:letterSpacing="0.1"
-            android:text="Harley Davidson"
-            android:textAlignment="center"
-            android:textColor="@color/blue1"
-            android:textSize="20sp" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:fontFamily="@font/poppins_regular"
-            android:letterSpacing="0.1"
-            android:text="See all"
-            android:textColor="@color/blue2"
-            android:textSize="10sp" />
+            <!-- Harley Davidson -->
 
-    </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relativeHarleyDavidson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcvHarleyDavidson"
-        android:layout_width="match_parent"
-        android:layout_marginTop="15dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
-        tools:layout_editor_absoluteX="16dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:letterSpacing="0.1"
+                    android:text="Harley Davidson"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:letterSpacing="0.1"
+                    android:text="See all"
+                    android:textColor="@color/blue2"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvHarleyDavidson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/relativeHarleyDavidson"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <!-- Honda -->
+
+            <RelativeLayout
+                android:id="@+id/relativeHonda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rcvHarleyDavidson">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:letterSpacing="0.1"
+                    android:text="Honda"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:letterSpacing="0.1"
+                    android:text="See all"
+                    android:textColor="@color/blue2"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvHonda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/relativeHonda"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <!-- KTM -->
+
+            <RelativeLayout
+                android:id="@+id/relativeKTM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rcvHonda">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:letterSpacing="0.1"
+                    android:text="KTM"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:letterSpacing="0.1"
+                    android:text="See all"
+                    android:textColor="@color/blue2"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvKTM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/relativeKTM"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <!-- Kawasaki -->
+
+            <RelativeLayout
+                android:id="@+id/relativeKawasaki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rcvKTM">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:letterSpacing="0.1"
+                    android:text="Kawasaki"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:letterSpacing="0.1"
+                    android:text="See all"
+                    android:textColor="@color/blue2"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvKawasaki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/relativeKawasaki"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <!-- Ducati -->
+
+            <RelativeLayout
+                android:id="@+id/relativeDucati"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rcvKawasaki">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:letterSpacing="0.1"
+                    android:text="Ducati"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:letterSpacing="0.1"
+                    android:text="See all"
+                    android:textColor="@color/blue2"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvDucati"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/relativeDucati"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <!-- Yamaha -->
+
+            <RelativeLayout
+                android:id="@+id/relativeYamaha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rcvDucati">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:letterSpacing="0.1"
+                    android:text="Yamaha"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue1"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_regular"
+                    android:letterSpacing="0.1"
+                    android:text="See all"
+                    android:textColor="@color/blue2"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvYamaha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/relativeYamaha"
+                tools:layout_editor_absoluteX="16dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
