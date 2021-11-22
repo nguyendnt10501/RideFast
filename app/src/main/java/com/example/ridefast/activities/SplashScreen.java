@@ -1,4 +1,4 @@
-package com.example.ridefast;
+package com.example.ridefast.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.ridefast.R;
 
 public class SplashScreen extends AppCompatActivity {
     int splashScreen = 4000;

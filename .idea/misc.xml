@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/background_form.xml" value="0.24351851851851852" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/button.xml" value="0.1" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_login_screen.xml" value="0.1" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_signup_screen.xml" value="0.2037914691943128" />
         <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_splash_screen.xml" value="0.29375" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/drawer_header.xml" value="0.22" />
         <entry key="..\:/Android/RideFast/app/src/main/res/layout/item_logocompany.xml" value="0.29375" />
         <entry key="..\:/Android/RideFast/app/src/main/res/layout/item_product.xml" value="0.29375" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/menu/menu.xml" value="0.28958333333333336" />
       </map>
     </option>
   </component>

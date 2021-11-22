@@ -1,13 +1,19 @@
-package com.example.ridefast;
+package com.example.ridefast.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
+import com.example.ridefast.R;
 import com.example.ridefast.adapter.DucatiAdapter;
 import com.example.ridefast.adapter.HarleyDavidsonAdapter;
 import com.example.ridefast.adapter.HondaAdapter;
@@ -24,17 +30,19 @@ import com.example.ridefast.modal.LogoCompany;
 import com.example.ridefast.modal.Yamaha;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     FirebaseFirestore db;
 
     RecyclerView rcvLogoCompany, rcvHarleyDavidson, rcvHonda, rcvKTM, rcvDucati, rcvYamaha, rcvKawasaki;
+    ImageView menu;
 
     ArrayList<HarleyDavidson> harleyDavidsonArrayList;
     ArrayList<Honda> hondaArrayList;
@@ -51,6 +59,9 @@ public class MainActivity extends AppCompatActivity {
     DucatiAdapter ducatiAdapter;
     KawasakiAdapter kawasakiAdapter;
 
+    DrawerLayout drawerLayout;
+    NavigationView navigationView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +70,11 @@ public class MainActivity extends AppCompatActivity {
 
         db = FirebaseFirestore.getInstance();
 
+        drawerLayout = findViewById(R.id.drawerLayout);
+        navigationView = findViewById(R.id.navigationView);
+        menu = findViewById(R.id.menuHamburger);
+
+        navigationDrawer();
 // ---------> LogoCompanies
 
         rcvLogoCompany = findViewById(R.id.rcvLogoCompany);
@@ -102,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
         rcvKTM.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL,false));
         rcvKTM.setAdapter(ktmAdapter);
 
-        getDataKTM();
+//        getDataKTM();
 
 // -----------> Product - Kawasaki
 
@@ -114,7 +130,7 @@ public class MainActivity extends AppCompatActivity {
         rcvKawasaki.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL,false));
         rcvKawasaki.setAdapter(kawasakiAdapter);
 
-        getDataKawasaki();
+//        getDataKawasaki();
 
 // -----------> Product - Ducati
 
@@ -126,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         rcvDucati.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL,false));
         rcvDucati.setAdapter(ducatiAdapter);
 
-        getDataDucati();
+//        getDataDucati();
 
 // -----------> Product - Yamaha
 
@@ -138,10 +154,37 @@ public class MainActivity extends AppCompatActivity {
         rcvYamaha.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL,false));
         rcvYamaha.setAdapter(yamahaAdapter);
 
-        getDataYamaha();
-
+//        getDataYamaha();
     }
 
+    //navigation drawer
+    public void navigationDrawer(){
+        navigationView.bringToFront();
+        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setCheckedItem(R.id.home);
+
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(drawerLayout.isDrawerVisible(GravityCompat.START)){
+                    drawerLayout.closeDrawer(GravityCompat.START);
+                }else drawerLayout.openDrawer(GravityCompat.START);
+            }
+        });
+    }
+    @Override
+    public void onBackPressed() {
+        if(drawerLayout.isDrawerVisible(GravityCompat.START)){
+            drawerLayout.closeDrawer(GravityCompat.START);
+        }else
+        super.onBackPressed();
+    }
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        return true;
+    }
+
+    //get data
     private void getDataHonda() {
         db.collection("Honda")
                 .get()
@@ -268,4 +311,6 @@ public class MainActivity extends AppCompatActivity {
         list.add(new LogoCompany(R.drawable.ktm_logo));
         return list;
     }
+
+
 }
