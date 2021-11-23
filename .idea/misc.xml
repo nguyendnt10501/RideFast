@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Android/RideFast/app/src/main/res/drawable/background_form.xml" value="0.24351851851851852" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/btn_buy.xml" value="0.19537037037037036" />
         <entry key="..\:/Android/RideFast/app/src/main/res/drawable/button.xml" value="0.1" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/card_detail.xml" value="0.19537037037037036" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_detail.xml" value="0.18" />
         <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_login_screen.xml" value="0.1" />
         <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_signup_screen.xml" value="0.2037914691943128" />

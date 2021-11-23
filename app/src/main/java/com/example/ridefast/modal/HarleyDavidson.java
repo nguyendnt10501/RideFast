@@ -1,10 +1,26 @@
 package com.example.ridefast.modal;
 
-public class HarleyDavidson {
+import java.io.Serializable;
+
+public class HarleyDavidson implements Serializable {
     public HarleyDavidson() {
     }
 
     String background;
+    String backgroundDetail;
+
+    public HarleyDavidson(String backgroundDetail) {
+        this.backgroundDetail = backgroundDetail;
+    }
+
+    public String getBackgroundDetail() {
+        return backgroundDetail;
+    }
+
+    public void setBackgroundDetail(String backgroundDetail) {
+        this.backgroundDetail = backgroundDetail;
+    }
+
     String name;
     String category;
     Float price;
