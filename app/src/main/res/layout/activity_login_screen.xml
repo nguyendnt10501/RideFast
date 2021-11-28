@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_signup"
+    android:background="@drawable/signup_background"
     tools:ignore="OnClick"
     tools:context=".activities.SignupScreen">
 
@@ -17,6 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <!--hi text-->
         <TextView
             android:id="@+id/hi"
             android:layout_width="wrap_content"
@@ -27,7 +28,7 @@
             android:fontFamily="@font/poppins_bold"
             android:letterSpacing=".1"
             android:text="Hello"
-            android:textColor="@color/blue1"
+            android:textColor="@color/yellow"
             android:textSize="20sp" />
 
         <!-- email -->
@@ -47,7 +48,7 @@
                 android:fontFamily="@font/poppins_medium"
                 android:hint="Email"
                 android:letterSpacing=".1"
-                android:textColor="@color/blue1"
+                android:textColor="@color/white"
                 android:textSize="15sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -69,22 +70,22 @@
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:letterSpacing=".1"
-                android:textColor="@color/blue1"
+                android:textColor="@color/white"
                 android:textSize="15sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
+            android:id="@+id/forgotPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/forgotPassword"
             android:layout_below="@+id/password"
-            android:text="Forgot password?"
-            android:textColor="@color/blue2"
-            android:fontFamily="@font/poppins_regular"
-            android:textSize="10sp"
+            android:layout_alignParentRight="true"
             android:layout_marginRight="20dp"
+            android:fontFamily="@font/poppins_regular"
             android:letterSpacing=".1"
-            android:layout_alignParentRight="true"/>
+            android:text="Forgot password?"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
 
 
         <Button
@@ -99,9 +100,8 @@
             android:onClick="login"
             android:text="LOGIN"
             android:textAlignment="center"
-            android:textColor="@color/blueDark"
-            android:textSize="20sp"
-            />
+            android:textColor="@color/dark"
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -169,7 +169,7 @@
             android:letterSpacing=".1"
             android:onClick="jumpToSignup"
             android:text="Signup here"
-            android:textColor="@color/blue1"
+            android:textColor="@color/yellow"
             android:textSize="12sp" />
 
 

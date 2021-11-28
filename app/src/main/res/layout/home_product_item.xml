@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="259dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/product_item_background"
+    android:layout_height="110dp">
+
+    <!--image-->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="129dp"
+        android:layout_height="85dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/moto" />
+
+    <!--text-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Pan America"
+            android:textColor="@color/dark"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins_bold"
+            android:letterSpacing=".1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/category"
+            android:text="Adventure"
+            android:textColor="@color/dark"
+            android:textSize="10sp"
+            android:fontFamily="@font/poppins_regular"
+            android:letterSpacing=".1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:text="28.999$"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/dark"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins_bold"
+            android:letterSpacing=".1"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

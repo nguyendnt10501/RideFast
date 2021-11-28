@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream">
+
+    <!--hi text-->
+    <LinearLayout
+        android:id="@+id/hiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:letterSpacing="0.1"
+            android:text="Hello there,"
+            android:textColor="@color/yellow"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:letterSpacing="0.1"
+            android:text="Let choose a bike"
+            android:textColor="@color/dark"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!--search-->
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/hiText"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/search_bar"
+        android:drawableStart="@drawable/loupe"
+        android:drawablePadding="10dp"
+        android:hint="what are you looking for?"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/dark" />
+
+    <!-- Logo company -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvLogoCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="30dp" />
+
+    <!--show products-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rcvLogoCompany"
+        android:layout_marginTop="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Harley Davidson -->
+            <RelativeLayout
+                android:id="@+id/relativeHarleyDavidson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+                <RelativeLayout
+                    android:id="@+id/titleHarleyDavidson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:letterSpacing="0.1"
+                        android:text="Harley Davidson"
+                        android:textAlignment="center"
+                        android:textColor="@color/yellow"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/seeAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:letterSpacing="0.1"
+                        android:text="See all"
+                        android:textColor="@color/yellow"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvHarleyDavidson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleHarleyDavidson"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <!-- Honda -->
+            <RelativeLayout
+                android:id="@+id/relativeHonda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeHarleyDavidson"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/titleHonda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:letterSpacing="0.1"
+                        android:text="Honda"
+                        android:textAlignment="center"
+                        android:textColor="@color/yellow"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:letterSpacing="0.1"
+                        android:text="See all"
+                        android:textColor="@color/yellow"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvHonda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleHonda"
+                    android:layout_marginTop="5dp" />
+
+            </RelativeLayout>
+
+            <!-- KTM -->
+            <RelativeLayout
+                android:id="@+id/relativeKTM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeHonda"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/titleKTM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:letterSpacing="0.1"
+                        android:text="KTM"
+                        android:textAlignment="center"
+                        android:textColor="@color/yellow"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:letterSpacing="0.1"
+                        android:text="See all"
+                        android:textColor="@color/yellow"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvKTM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleKTM"
+                    android:layout_marginTop="5dp" />
+
+            </RelativeLayout>
+
+            <!-- Kawasaki -->
+            <RelativeLayout
+                android:id="@+id/relativeKawasaki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeKTM"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/titleKawasaki"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:letterSpacing="0.1"
+                        android:text="Kawasaki"
+                        android:textAlignment="center"
+                        android:textColor="@color/yellow"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:letterSpacing="0.1"
+                        android:text="See all"
+                        android:textColor="@color/yellow"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvKawasaki"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleKawasaki"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <!-- Ducati -->
+            <RelativeLayout
+                android:id="@+id/relativeDucati"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeKawasaki"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/titleDucati"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:letterSpacing="0.1"
+                        android:text="Ducati"
+                        android:textAlignment="center"
+                        android:textColor="@color/yellow"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:letterSpacing="0.1"
+                        android:text="See all"
+                        android:textColor="@color/yellow"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvDucati"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleDucati"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <!-- Yamaha -->
+            <RelativeLayout
+                android:id="@+id/relativeYamaha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeDucati"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/titleYamaha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:letterSpacing="0.1"
+                        android:text="Yamaha"
+                        android:textAlignment="center"
+                        android:textColor="@color/yellow"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:letterSpacing="0.1"
+                        android:text="See all"
+                        android:textColor="@color/yellow"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvYamaha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleYamaha"
+                    android:layout_marginTop="5dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

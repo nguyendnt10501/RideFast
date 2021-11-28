@@ -32,7 +32,7 @@ public class LogoCompanyAdapter extends RecyclerView.Adapter<LogoCompanyAdapter.
     @NonNull
     @Override
     public LogoCompanyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_logocompany, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.logocompany_item, parent, false);
         return new LogoCompanyViewHolder(view);
     }
 

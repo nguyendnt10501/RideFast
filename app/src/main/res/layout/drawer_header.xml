@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="200dp"
     android:layout_marginBottom="16dp"
-    android:background="@color/blueDark2">
+    android:background="@color/cream">
 
     <ImageView
         android:id="@+id/avatar"
@@ -23,7 +23,7 @@
         android:fontFamily="@font/poppins_regular"
         android:letterSpacing=".1"
         android:text="Ho Thanh Dat"
-        android:textColor="@color/blue1"
+        android:textColor="@color/dark"
         android:textSize="17sp" />
 
     <TextView
@@ -35,13 +35,13 @@
         android:fontFamily="@font/poppins_regular"
         android:letterSpacing=".1"
         android:text="datht2002@gmail.com"
-        android:textColor="@color/blue2"
+        android:textColor="@color/dark"
         android:textSize="12sp" />
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/blue1" />
+        android:background="@color/dark" />
 
 </RelativeLayout>

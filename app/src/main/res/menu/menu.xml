@@ -8,11 +8,6 @@
             android:icon="@drawable/home"
             />
         <item
-            android:id="@+id/account"
-            android:title="ACCOUNT"
-            android:icon="@drawable/user"
-            />
-        <item
             android:id="@+id/bestSeller"
             android:title="BEST SELLER"
             android:icon="@drawable/fire"
@@ -21,6 +16,16 @@
             android:id="@+id/statistics"
             android:title="STATISTICS"
             android:icon="@drawable/statistics"
+            />
+        <item
+            android:id="@+id/invoice"
+            android:title="INVOICE"
+            android:icon="@drawable/invoice"
+            />
+        <item
+            android:id="@+id/logout"
+            android:title="LOGOUT"
+            android:icon="@drawable/logout"
             />
     </group>
 </menu>

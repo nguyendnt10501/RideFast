@@ -32,7 +32,7 @@ public class SignupScreen extends AppCompatActivity {
         setContentView(R.layout.activity_signup_screen);
 
         auth = FirebaseAuth.getInstance();
-
+        
         phoneNumber = findViewById(R.id.phoneNumber);
         email =  findViewById(R.id.email);
         password = findViewById(R.id.password);

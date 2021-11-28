@@ -3,34 +3,22 @@ package com.example.ridefast.modal;
 import java.io.Serializable;
 
 public class HarleyDavidson implements Serializable {
+
+    String image;
+
     public HarleyDavidson() {
-    }
-
-    String background;
-    String backgroundDetail;
-
-    public HarleyDavidson(String backgroundDetail) {
-        this.backgroundDetail = backgroundDetail;
-    }
-
-    public String getBackgroundDetail() {
-        return backgroundDetail;
-    }
-
-    public void setBackgroundDetail(String backgroundDetail) {
-        this.backgroundDetail = backgroundDetail;
     }
 
     String name;
     String category;
     Float price;
 
-    public String getBackground() {
-        return background;
+    public String getImage() {
+        return image;
     }
 
-    public void setBackground(String background) {
-        this.background = background;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getName() {
@@ -57,13 +45,10 @@ public class HarleyDavidson implements Serializable {
         this.price = price;
     }
 
-    public HarleyDavidson(String background, String name, String category, Float price) {
-        this.background = background;
+    public HarleyDavidson(String image, String name, String category, Float price) {
+        this.image = image;
         this.name = name;
         this.category = category;
         this.price = price;
     }
-
-
-
 }

@@ -1,6 +1,7 @@
 package com.example.ridefast.modal;
 
 public class LogoCompany {
+
     public int image;
 
     public int getImage() {

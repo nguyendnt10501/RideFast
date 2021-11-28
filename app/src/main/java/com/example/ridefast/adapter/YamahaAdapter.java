@@ -1,6 +1,7 @@
 package com.example.ridefast.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.ridefast.R;
-import com.example.ridefast.modal.Ducati;
+import com.example.ridefast.activities.DetailActivity;
 import com.example.ridefast.modal.Yamaha;
 
 import java.util.ArrayList;
@@ -31,7 +32,7 @@ public class YamahaAdapter extends RecyclerView.Adapter<YamahaAdapter.YamahaView
     @Override
     public YamahaViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        return new YamahaViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_product,parent,false));
+        return new YamahaViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.home_product_item,parent,false));
     }
 
     @Override
@@ -39,10 +40,19 @@ public class YamahaAdapter extends RecyclerView.Adapter<YamahaAdapter.YamahaView
 
         Yamaha yamaha = yamahaArrayList.get(position);
 
-        Glide.with(context).load(yamaha.getBackground()).into(holder.background);
+        Glide.with(context).load(yamaha.getImage()).into(holder.image);
         holder.name.setText(yamaha.getName());
         holder.category.setText(yamaha.getCategory());
         holder.price.setText(yamaha.getPrice()+"$");
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (context, DetailActivity.class);
+                intent.putExtra("detailed",yamaha);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -51,7 +61,7 @@ public class YamahaAdapter extends RecyclerView.Adapter<YamahaAdapter.YamahaView
     }
 
     public class YamahaViewHolder extends RecyclerView.ViewHolder {
-        ImageView background;
+        ImageView image;
         TextView name;
         TextView category;
         TextView price;
@@ -59,7 +69,7 @@ public class YamahaAdapter extends RecyclerView.Adapter<YamahaAdapter.YamahaView
         public YamahaViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            background = itemView.findViewById(R.id.background);
+            image = itemView.findViewById(R.id.image);
             name = itemView.findViewById(R.id.name);
             category = itemView.findViewById(R.id.category);
             price = itemView.findViewById(R.id.price);

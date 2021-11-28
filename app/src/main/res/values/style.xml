@@ -4,6 +4,13 @@
     <style name="titleStyle" parent="android:Widget.TextView">
         <item name="fontFamily">@font/poppins_medium</item>
         <item name="android:letterSpacing">.1</item>
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="navigationStyle">
+        <!--text and icon when selected-->
+        <item name="colorPrimary">@color/dark</item>
+        <!--background when selected-->
+        <item name="colorControlHighlight">#959595</item>
     </style>
 </resources>

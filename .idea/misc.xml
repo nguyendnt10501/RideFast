@@ -3,18 +3,49 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable-v24/background_product.xml" value="0.11137123745819398" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable-v24/item_logocompany.xml" value="0.12638888888888888" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable-v24/logocompany_item_background.xml" value="0.12638888888888888" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/background_btn_add_invoice.xml" value="0.14305555555555555" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/background_button.xml" value="0.14444444444444443" />
         <entry key="..\:/Android/RideFast/app/src/main/res/drawable/background_form.xml" value="0.24351851851851852" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/background_invoice_item.xml" value="0.14444444444444443" />
         <entry key="..\:/Android/RideFast/app/src/main/res/drawable/btn_buy.xml" value="0.19537037037037036" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/btn_payment.xml" value="0.14444444444444443" />
         <entry key="..\:/Android/RideFast/app/src/main/res/drawable/button.xml" value="0.1" />
         <entry key="..\:/Android/RideFast/app/src/main/res/drawable/card_detail.xml" value="0.19537037037037036" />
-        <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_detail.xml" value="0.18" />
-        <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_login_screen.xml" value="0.1" />
-        <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_main.xml" value="0.16" />
-        <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_signup_screen.xml" value="0.2037914691943128" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/dialog_header.xml" value="0.14583333333333334" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/dialog_main.xml" value="0.14583333333333334" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/home_product_item_background.xml" value="0.14305555555555555" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/logocompany_item_background.xml" value="0.12638888888888888" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/product_item_background.xml" value="0.12638888888888888" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/search_bar.xml" value="0.12638888888888888" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/shadow.xml" value="0.12638888888888888" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/drawable/shadow_110.xml" value="0.12638888888888888" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout-v28/home_product_item.xml" value="0.21739130434782608" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_detail.xml" value="0.13" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_invoice.xml" value="0.11" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_login_screen.xml" value="0.12" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_main.xml" value="0.17" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_signup_screen.xml" value="0.1" />
         <entry key="..\:/Android/RideFast/app/src/main/res/layout/activity_splash_screen.xml" value="0.29375" />
-        <entry key="..\:/Android/RideFast/app/src/main/res/layout/drawer_header.xml" value="0.22" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/add_company_custom_dialog.xml" value="0.18" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/add_moto_custom_dialog.xml" value="0.2" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/companylogo_item.xml" value="0.18783783783783783" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/drawer_header.xml" value="0.16" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/fragment_account.xml" value="0.16256830601092895" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/fragment_bestseller.xml" value="0.16256830601092895" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/fragment_detail.xml" value="0.16325136612021857" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/fragment_home.xml" value="0.16256830601092895" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/fragment_invoice.xml" value="0.12" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/fragment_product.xml" value="0.1902027027027027" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/fragment_statistics.xml" value="0.16325136612021857" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/home_product_item.xml" value="0.2" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/invoice_item.xml" value="0.22" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/item_invoice.xml" value="0.16" />
         <entry key="..\:/Android/RideFast/app/src/main/res/layout/item_logocompany.xml" value="0.29375" />
         <entry key="..\:/Android/RideFast/app/src/main/res/layout/item_product.xml" value="0.29375" />
+        <entry key="..\:/Android/RideFast/app/src/main/res/layout/logocompany_item.xml" value="0.75" />
         <entry key="..\:/Android/RideFast/app/src/main/res/menu/menu.xml" value="0.28958333333333336" />
       </map>
     </option>

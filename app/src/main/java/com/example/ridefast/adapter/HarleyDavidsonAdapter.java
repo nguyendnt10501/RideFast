@@ -33,7 +33,7 @@ public class HarleyDavidsonAdapter extends RecyclerView.Adapter<HarleyDavidsonAd
     @Override
     public HarleyDavidsonViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        return new HarleyDavidsonViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_product,parent,false));
+        return new HarleyDavidsonViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.home_product_item,parent,false));
     }
 
     @Override
@@ -41,7 +41,7 @@ public class HarleyDavidsonAdapter extends RecyclerView.Adapter<HarleyDavidsonAd
 
         HarleyDavidson harleyDavidson = harleyDavidsonList.get(position);
 
-        Glide.with(context).load(harleyDavidson.getBackground()).into(holder.background);
+        Glide.with(context).load(harleyDavidson.getImage()).into(holder.image);
         holder.name.setText(harleyDavidson.getName());
         holder.category.setText(harleyDavidson.getCategory());
         holder.price.setText(harleyDavidson.getPrice()+"$");
@@ -62,7 +62,7 @@ public class HarleyDavidsonAdapter extends RecyclerView.Adapter<HarleyDavidsonAd
     }
 
     public class HarleyDavidsonViewHolder extends RecyclerView.ViewHolder {
-        ImageView background;
+        ImageView image;
         TextView name;
         TextView category;
         TextView price;
@@ -70,7 +70,7 @@ public class HarleyDavidsonAdapter extends RecyclerView.Adapter<HarleyDavidsonAd
         public HarleyDavidsonViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            background = itemView.findViewById(R.id.background);
+            image = itemView.findViewById(R.id.image);
             name = itemView.findViewById(R.id.name);
             category = itemView.findViewById(R.id.category);
             price = itemView.findViewById(R.id.price);

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream">
+
+<!--    &lt;!&ndash; back button &ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:id="@+id/btnBack"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginTop="13dp"-->
+<!--        android:src="@drawable/back" />-->
+
+    <!-- big title -->
+    <TextView
+        android:id="@+id/bigTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:letterSpacing=".1"
+        android:text="Invoice"
+        android:textColor="@color/dark"
+        android:textSize="25sp" />
+
+    <!-- small title -->
+    <TextView
+        android:id="@+id/smallTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bigTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/poppins_medium"
+        android:letterSpacing=".1"
+        android:text="All items"
+        android:textColor="@color/dark"
+        android:textSize="15sp" />
+
+    <!-- recycler view  -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvInvoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/smallTitle"
+        android:layout_marginTop="20dp" />
+
+    <!-- bottom -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="@drawable/background_invoice_item">
+
+        <!-- total -->
+        <LinearLayout
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/priceAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:letterSpacing=".1"
+                android:text="Total: "
+                android:layout_marginRight="5dp"
+                android:textColor="@color/dark"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/priceAll"
+                android:fontFamily="@font/poppins_bold"
+                android:letterSpacing=".1"
+                android:text="99.999$"
+                android:textColor="@color/yellow"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <!-- button -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total">
+
+            <Button
+                android:id="@+id/btnPayment"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_payment"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Payment"
+                android:textAllCaps="false"
+                android:textColor="@color/dark"
+                android:textSize="25dp" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:background="@drawable/background_btn_add_invoice"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:textColor="@color/dark"
+                android:textSize="25dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

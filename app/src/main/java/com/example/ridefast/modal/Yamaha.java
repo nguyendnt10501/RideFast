@@ -1,20 +1,24 @@
 package com.example.ridefast.modal;
 
-public class Yamaha {
+import java.io.Serializable;
+
+public class Yamaha implements Serializable {
+
+    String image;
+    String name;
+
     public Yamaha() {
     }
 
-    String background;
-    String name;
     String category;
     Float price;
 
-    public String getBackground() {
-        return background;
+    public String getImage() {
+        return image;
     }
 
-    public void setBackground(String background) {
-        this.background = background;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getName() {
@@ -41,13 +45,10 @@ public class Yamaha {
         this.price = price;
     }
 
-    public Yamaha(String background, String name, String category, Float price) {
-        this.background = background;
+    public Yamaha(String image, String name, String category, Float price) {
+        this.image = image;
         this.name = name;
         this.category = category;
         this.price = price;
     }
-
-
-
 }

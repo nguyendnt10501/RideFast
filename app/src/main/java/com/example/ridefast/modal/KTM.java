@@ -1,20 +1,23 @@
 package com.example.ridefast.modal;
 
-public class KTM {
-    public KTM() {
-    }
+import java.io.Serializable;
 
-    String background;
+public class KTM implements Serializable {
+
+    String image;
     String name;
     String category;
     Float price;
 
-    public String getBackground() {
-        return background;
+    public KTM() {
     }
 
-    public void setBackground(String background) {
-        this.background = background;
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getName() {
@@ -41,13 +44,10 @@ public class KTM {
         this.price = price;
     }
 
-    public KTM(String background, String name, String category, Float price) {
-        this.background = background;
+    public KTM(String image, String name, String category, Float price) {
+        this.image = image;
         this.name = name;
         this.category = category;
         this.price = price;
     }
-
-
-
 }
